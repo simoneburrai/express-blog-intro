@@ -4,6 +4,8 @@ const port = 2000;
 
 const allPosts = require("./data/posts.js")
 
+app.use(express.static("public"));
+
 
 app.get("/", (req, res) => {
 res.send("Server del mio Blog");
